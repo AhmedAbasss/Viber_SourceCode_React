@@ -1,0 +1,150 @@
+.home {
+  padding: 10%;
+  padding-top: 10%;
+  margin: 0px;
+  position: relative;
+  padding-right: 0%;
+  height: 96vh;
+  min-height: 320px;
+  width: 100%;
+  overflow: hidden;
+}
+.home * {
+  font-weight: 100;
+  color: #fff;
+}
+
+.home h1 {
+  /* font-family: Marsden; */
+  font-size: 42px;
+  color: #fff;
+  max-width: 50%;
+  font-weight: 100;
+  margin: 0px;
+}
+
+.btn {
+  text-decoration: none;
+  color: #e2e8f0;
+  cursor: pointer;
+  display: block;
+  width: max-content;
+  background-color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 14px 32px 14px 32px;
+  border-radius: 5px;
+  text-align: center;
+  border: #fff solid 0.1px;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+}
+.btn:hover {
+  background-color: #171717;
+}
+.border_btn {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #665cac;
+  border: #665cac solid 1px;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+.green_btn {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #66b821;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+.p2 {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-width: 100%;
+  font-size: 1.4rem bold;
+  font-weight: 800;
+  color: white;
+}
+
+.p2:last-child {
+  display: block;
+  font-size: 0.7rem;
+  padding: 0;
+  margin: 0px;
+  color: #46b2ff;
+}
+
+.download_items {
+  /* margin: 4rem; */
+  /* font-family: Marsden; */
+  margin-top: 4rem;
+  min-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 1rem; */
+}
+
+/* ? NOT WORKING  */
+.img {
+  max-width: 500px;
+  max-height: 500px;
+  border: "10px solid #5a6994" !important;
+  border-bottom: "none" !important;
+  border-radius: "1rem" !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.base-background .video-container video {
+  outline: none;
+}
+.background-video {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%);
+}
+.base-background {
+  background: #230d0d;
+  text-align: center;
+}
+.video {
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 770px) {
+  .home {
+    display: block;
+    padding: 0.8rem;
+    padding-top: 12rem;
+    text-align: center;
+    align-items: center;
+  }
+  .home h1 {
+    font-size: 28px;
+  }
+  .home h1,
+  .download_items {
+    padding: 0;
+    margin: 0;
+    padding-top: 2rem;
+    display: block;
+    max-width: 100%;
+    margin: 0rem;
+  }
+}

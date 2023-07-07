@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Marsden_bold";
+  src: local("Marsden Hairline"), local("Marsden-Hairline"),
+    url("../../asses/font/bold++/Marsden-Medium.woff2") format("woff2");
+  /* url("./asses/font/bold++/Marsden-Medium.woff") format("woff"),
+    url("./asses/font/bold++/Marsden-Medium.ttf") format("truetype"); */
+  font-weight: normal;
+  font-style: normal;
+}
+.part {
+  margin: 0;
+  padding: 2rem;
+  float: left;
+  background-color: #ebebeb;
+  width: 50%;
+  text-align: center;
+  height: 1080px;
+}
+.part1 {
+  background-color: #f8f8f8;
+}
+
+.part h1 {
+  font-family: Marsden_bold;
+  margin: 5px;
+}
+.part p {
+  color: #494949;
+  margin: 5px;
+  font-size: 15px;
+}
+
+.img_btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #f8f8f8;
+  color: #e2e8f0;
+  padding: 0;
+  border: 0;
+  height: 50px;
+  width: 170px;
+  /* width: max-content;
+  background-color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center; */
+}
+
+.img_btn img {
+  height: 50px;
+  width: 170px;
+}
+
+.win_btn {
+  cursor: pointer;
+  background-color: #584f94;
+  color: #e2e8f0;
+  /* font-family: Marsden; */
+  font-size: 20px;
+  border: 0;
+  border-radius: 30px;
+  padding: 14px 32px 14px 32px;
+}
+.part_img {
+  width: auto;
+  max-width: 100%;
+}
+
+.links {
+  /* display: inline-block; */
+  float: inherit;
+  max-width: 50%;
+  text-align: start;
+  font-size: 14px;
+}
+.links * {
+  text-decoration: none;
+  float: left;
+}
+.links ul li {
+  margin-bottom: 1rem;
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (max-width: 770px) {
+  .part {
+    width: 100%;
+    height: auto;
+  }
+  .links {
+    max-width: 100%;
+  }
+}

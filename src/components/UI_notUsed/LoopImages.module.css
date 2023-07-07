@@ -1,0 +1,41 @@
+#container {
+  height: 350px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+
+.photobanner {
+  position: absolute;
+  /* top: 0px;
+  left: 0px; */
+  /* overflow: hidden; */
+  white-space: nowrap;
+  animation: bannermove 30s linear infinite;
+  aspect-ratio: 16/9;
+}
+
+.photobanner img {
+  aspect-ratio: 16/9;
+  height: 350px;
+  margin: 0 0.5em;
+  background-color: aliceblue;
+}
+
+.block {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  box-shadow: inset -5px -5px 10px 20px #124c83;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}

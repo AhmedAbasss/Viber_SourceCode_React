@@ -1,0 +1,10 @@
+.main_container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+  margin-right: 10px;
+}
+.item {
+  max-height: 13rem;
+  text-align: center;
+}

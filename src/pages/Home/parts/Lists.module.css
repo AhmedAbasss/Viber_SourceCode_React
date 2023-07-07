@@ -1,0 +1,75 @@
+.ul_container {
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+  font-size: 13px;
+  /* overflow: hidden; */
+}
+
+.ul {
+  width: 25%;
+  padding-left: 2px;
+}
+
+.ul .li {
+  cursor: pointer;
+  list-style: none;
+  margin: 0.5rem;
+}
+.ul .li:hover {
+  text-decoration: underline;
+}
+.ul .li:first-child {
+  color: #8a83b3;
+}
+.ul .li:hover:last-child {
+  text-decoration: none;
+}
+
+.socialMediaList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.socialMediaList li {
+  margin-right: 4px;
+}
+
+.socialMediaList li:last-child {
+  margin-right: 0;
+}
+
+.socialMediaList a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: rgba(242, 242, 242, 0.3);
+  color: #00000000;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.socialMediaList a:hover {
+  background-color: #ccc;
+}
+
+.socialMediaList svg {
+  font-size: 14px;
+  color: #574e92;
+}
+
+@media only screen and (max-width: 770px) {
+  .ul_container {
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  .ul_container > ul {
+    flex: 0 0 50%;
+    /* padding: 0.6rem; */
+  }
+}
+/* ? ====================== */

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Marsden";
+  src: local("Marsden Light"), local("Marsden-Light"),
+    url("Marsden-Light.woff2") format("woff2"),
+    url("Marsden-Light.woff") format("woff"),
+    url("Marsden-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}

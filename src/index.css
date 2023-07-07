@@ -1,0 +1,114 @@
+/* @import "antd/dist/antd.css"; */
+@font-face {
+  font-family: "Marsden";
+  src: local("Marsden Hairline"), local("Marsden-Hairline"),
+    url("./asses/font/bold+/Marsden-Light.woff2") format("woff2");
+  /* url("./asses/font/bold+/Marsden-Light.woff") format("woff"),
+    url("./asses/font/bold+/Marsden-Light.ttf") format("truetype"); */
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  /* outline: 1px solid red; */
+  /* background-color: rgba(200, 113, 247, 0.2); */
+
+  /* transition: 600ms; */
+  /* -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none; */
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body button,
+body li,
+body a,
+body p {
+  font-family: Marsden;
+}
+
+body {
+  margin: 0;
+  /* font-family: Roboto, sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* ?==================== */
+/*DEMO ITEMS*/
+/* @font-face {
+  src: url("http://scorpionbyte.com/uploads/files/2014-161/SBA-ivwscaibqk-big_noodle_titling.ttf");
+  font-family: BF;
+}
+.h1 {
+  margin-top: 10%;
+  font-size: 72px;
+  width: 100%;
+  text-align: center;
+  color: #f7f7f8;
+  font-family: BF;
+} */
+
+#base-background .video-container video {
+  outline: none;
+}
+#background-video {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%);
+}
+#base-background {
+  background: #230d0d
+    url(//d34ymitoc1pg7m.cloudfront.net/bf4/backgrounds/bg-naval-735e2c38.jpg)
+    50% 0 no-repeat;
+  text-align: center;
+}
+.video {
+  object-fit: contain;
+}
+
+.element {
+  width: 50%;
+  text-align: center;
+}
+
+.element::before {
+  content: "";
+  display: inline-block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid black;
+  transform: rotate(90deg);
+  margin-right: 5px;
+}
+
+.element.selected::before {
+  border-color: red;
+}
